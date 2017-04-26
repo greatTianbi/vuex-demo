@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/components/Home'
 import Center from '@/components/Center'
 import Page1 from '@/components/Page1'
 import Page2 from '@/components/Page2'
@@ -12,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Center,
+      component: Home,
       isShow:false,
       children:[]
     },
