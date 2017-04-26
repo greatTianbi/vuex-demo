@@ -1,6 +1,6 @@
 # vue-element
 
-> A Vue.js project
+> A vuex-demo
 
 ## Build Setup
 
