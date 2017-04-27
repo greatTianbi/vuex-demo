@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
+import Home from '@/components/common/Home'
 import Center from '@/components/Center'
 import Page1 from '@/components/Page1'
 import Page2 from '@/components/Page2'
@@ -14,20 +14,27 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home,
-      isShow:false,
+      hidden:true,//是否隐藏
       children:[]
     },
     {
-      path: '/Center',
-      name: '处理中心',
-      component: Center,
-      isShow:true,
-      children:[]
+      path: '/',
+      component: Home,
+      name: '',
+      leaf:true,//是否只有一个节点
+      children:[
+        {
+          path: '/Center',
+          name: '处理中心',
+          component: Center
+        }
+      ]
     },
     {
       path:"/",
+      component: Home,
       name:"我的工作台",
-      isShow:true,
+      leaf:false,
       children:[
         {
           path: '/Page1',

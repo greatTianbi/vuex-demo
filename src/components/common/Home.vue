@@ -1,20 +1,21 @@
 <template>
   <div class="center">
-    <el-row>
-        <el-col>
-          <h2>Hello, welcome to my first project.</h2>
-        </el-col>
-    </el-row>
+    <com-Nav></com-Nav>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Nav from '@/components/common/Nav'
 
 export default {
   data () {
     return {
       
     }
+  },
+  components:{
+      comNav: Nav
   }
 }
    
