@@ -1,6 +1,6 @@
 # vue-element
 
-> A vuex-demo
+> vuex的一个小demo，实现了一个简单的计数功能。
 
 ## Build Setup
 
